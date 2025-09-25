@@ -1,10 +1,9 @@
 {
-  "cleanUrls": true
-  "rewrites": [
-    {
-      "source": "/quiz1",
-      "destination": "/Quiz1/homepage"
-    }
-  ]
-
+    "cleanUrls": true,
+    "rewrites": [
+        {
+            "source": "/quiz1",
+            "destination": "/Quiz1/homepage"
+        }
+    ]
 }
