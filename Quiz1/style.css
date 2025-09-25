@@ -1,0 +1,223 @@
+:root {
+  --primary-color: #ffb703; 
+  --accent-blue: #00aaff;
+  --secondary-color: #023047; 
+  --dark-bg: #0d1117;
+  --text-primary: #f0f6fc; 
+  --text-secondary: #c9d1d9; 
+  --border-color: #30363d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--primary-color);
+  z-index: 101;
+}
+
+p {
+  text-align: justify;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 1400px; 
+  z-index: 100;
+  background: rgba(22, 27, 34, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  color: var(--primary-color);
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color 0.3s;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar nav a:hover {
+  color: var(--primary-color);
+}
+
+.navbar nav a.active {
+  color: var(--accent-blue);
+  font-weight: 700;
+  border-bottom-color: var(--accent-blue);
+}
+
+.hero-section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('assets/imgs/orang.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  animation: bg 30s infinite alternate ease-in-out;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.hero-content h1 span {
+  background: linear-gradient(45deg, var(--primary-color), #ffecb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 183, 3, 0.2);
+}
+
+.btn i {
+  margin-left: 8px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.sosmed {
+  display: flex;
+  gap: 15px;
+}
+
+.sosmed a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sosmed a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transform: translateY(-5px);
+}
+
+.f1 {
+opacity: 0;
+animation: fade 1s ease forwards;
+}
+
+@keyframes fade {
+to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bg {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      padding: 10px 20px;
+      width: calc(100% - 20px);
+  }
+  .hero-content h1 { font-size: 3rem; }
+  .hero-content p { font-size: 1rem; }
+  .hero-actions { flex-direction: column; }
+}
+

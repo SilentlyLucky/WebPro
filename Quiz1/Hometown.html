@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hometown - Steven Alvin Christian</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="hometown.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Ste<span>ve</span>n</div>
+    <nav>
+      <a href="Homepage.html">Home</a>
+      <a href="Profile.html">Profile</a>
+      <a href="Hometown.html" class="active">Hometown</a>
+      <a href="Local_Foods.html">Local Foods</a>
+      <a href="Tourist_Places.html">Tourist Places</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hometown-hero">
+        <div class="hero-content">
+            <h1>Bontang</h1>
+            <p>Let's tune in to the Anthem of Bontang</p>
+
+            <div id="audio-player" class="audio-player-container">
+              <button id="mars-toggle-btn" class="mars-button" aria-label="Play Mars Bontang">
+                <i id="play-icon" class="fas fa-play"></i>
+                <i id="pause-icon" class="fas fa-pause hidden"></i>
+              </button>
+              <div class="progress-bar-container">
+                <span id="current-time">0:00</span>
+                <div class="progress-bar">
+                  <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <span id="total-duration">0:00</span>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="hometown-content">
+      <div class="content-wrapper">
+
+        <section class="Bontang-section fade-in-up">
+          <div class="Bontang-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bontang_City_Vector_Logo.svg" alt="Overview of Kota Bontang">
+          </div>
+          <div class="Bontang-text">
+            <h2>Where Industry </br>and Nature Thrive</h2>
+              <p>
+                Bontang is not only an <em>industrial powerhouse</em> but also a city blessed with <em>natural charm</em>. It is home to <strong>PT Badak LNG</strong>, once the world’s largest liquefied natural gas processing plant, and <strong>PT Pupuk Kalimantan Timur</strong>, the biggest fertilizer producer in Southeast Asia. Despite this industrial dominance, Bontang proudly carries the title of <em>“Kota Taman”</em>. The name is an acronym for <strong>Terbit, Agamis, Mandiri, Aman, Nyaman</strong> (Bright, Religious, Independent, Safe, and Comfortable). This vision is reflected in its well-planned green spaces and initiatives that emphasize harmony between industry and environment.
+              </p>
+              
+              <p>
+                Beyond its industrial identity, Bontang offers breathtaking attractions such as <strong>Beras Basah Island</strong> with its crystal-clear waters, the stilt village of <strong>Bontang Kuala</strong>, and <strong>Kutai National Park</strong>, a vital sanctuary for orangutans. For me, visiting Bontang feels like stepping into a city where <em>contrasts unite</em>. You can witness <em>world-class industry</em> in the morning, spend the afternoon enjoying <em>fresh seafood</em> by the sea, and walk through <em>mangrove forests</em> at sunset. It is a place that shows how <strong>industry and nature</strong>, when balanced, can create something truly inspiring.
+              </p>
+          </div>
+        </section>
+
+        <section class="gallery-section fade-in-up">
+            <h2>Glimpses of Bontang</h2>
+            <div class="photo-gallery">
+              <a href="https://id.wikipedia.org/wiki/Bontang_Kuala,_Bontang_Utara,_Bontang" class="gallery-item" target="_blank">
+                <img src="https://images.genpi.co/resize/640x360-100/uploads/kaltim/arsip/normal/2022/03/07/desa-wisata-bontang-kuala-di-bontang-kaltim-foto-instagra-vwqe.webp" alt="Bontang Kuala">
+                <div class="gallery-caption">Bontang Kuala Village</div>
+              </a>
+              
+              <a href="https://en.wikipedia.org/wiki/Badak_LNG" class="gallery-item" target="_blank">
+                <img src="https://www.dunia-energi.com/wp-content/uploads/2020/09/kilang-LNG-Bontang-Badak.jpg" alt="Pabrik Industri">
+                <div class="gallery-caption">World-Class Industry</div>
+              </a>
+              
+              <a href="https://id.wikipedia.org/wiki/Taman_Nasional_Kutai" class="gallery-item" target="_blank">
+                <img src="https://superlive.id/storage/superadventure/2019/04/05/xb16890395473.jpg.pagespeed.ic.dai0wxHAZk.webp" alt="Taman Kota Bontang">
+                <div class="gallery-caption">Kutai National Park</div>
+              </a>
+              
+              <a href="https://lindungihutan.com/blog/bontang-mangrove-park/" class="gallery-item" target="_blank">
+                <img src="http://www.hondacommunity.net/assets/images/5f216e4b777cd_ori.jpg" alt="Taman Mangrove">
+                <div class="gallery-caption">Mangrove Conservation</div>
+              </a>
+            </div>
+          </section>
+
+      </div>
+    </div>
+  </main>
+  <script src="hometown.js"></script>
+</body>
+</html>
