@@ -1,3 +1,10 @@
 {
   "cleanUrls": true
+  "rewrites": [
+    {
+      "source": "/quiz1",
+      "destination": "/quiz1/homepage"
+    }
+  ]
+
 }
