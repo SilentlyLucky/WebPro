@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const gallery = document.querySelector(".journey-gallery");
   
     if (gallery) {
-      const card = Array.from(gallery.children);
+      const cards = Array.from(gallery.children);
       const len = card.length;
   
-      card.forEach(card => {
+      cards.forEach(card => {
         const dupe = card.cloneNode(true);
         dupe.setAttribute('aria-hidden', true); 
         gallery.appendChild(dupe);
