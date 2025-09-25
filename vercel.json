@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/quiz1",
-      "destination": "/quiz1/homepage"
+      "destination": "/Quiz1/homepage"
     }
   ]
 
